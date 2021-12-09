@@ -53,7 +53,7 @@ In this set of experiments, we tested the following cases:
 
 ## 3. Code
 
-The code and results for the first set of experiments (malicious vs. benign-1) are  (here)[https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb].
+The code and results for the first set of experiments (malicious vs. benign-1) are  [here](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb).
 
 The code for the second set of experiments are in [].
 
