@@ -57,7 +57,7 @@ The code and results for the first set of experiments (malicious vs. benign-1) a
 
 The code for the second set of experiments are in [].
 
-In order to reproduce the results, please download the code and datasets and set the paths accordingly. 
+In order to reproduce the results, please download the code and dataset and then, set the your local path for each dataset accordingly. 
 
 
 
