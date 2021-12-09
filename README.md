@@ -1,8 +1,37 @@
 # A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks
-Source codes used on the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks".
+This repository contains the code and dataset used on the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks".
 
-# Abstract
+We collected the network ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following six columns: Timestamp, Source IP, Destination IP, Source MAC, Destination MAC, and Packet Lenght. 
 
-Recently,   cryptojacking   malware   has   become   aneasy  way  of  reaching  and  profiting  from  a  large  number  ofvictims  for  attackers.  Prior  works  studied  the  cryptojackingdetection  systems  focusing  on  both  in-browser  and  host-basedcryptojacking  malware.  However,  none  of  these  earlier  worksinvestigated different attack configurations and network settingsin  this  context.  For  example,  an  attacker  with  an  aggressiveprofit  strategy  may  increase  computational  resource  usage  tothe  maximum  to  benefit  more  in  a  short  time,  while  a  stealthyattacker may want to stay undetected longer time on the victim’sdevice. The accuracy of the detection mechanism may differ foran  aggressive  and  stealthy  attacker.  Not  only  profit  strategiesbut  also  the  cryptojacking  malware  type,  the  victim’s  device  aswell  as  various  network  settings  where  the  network  is  fully  orpartially  compromised  may  play  a  key  role  in  the  performanceevaluation of the detection mechanisms. In addition, smart homenetworks,  including  multiple  IoT  devices  (i.e.,  smart  TV),  areeasily exploited by the attackers, and they were equipped to minecryptocurrency  on  behalf  of  the  attacker.  However,  none  of  thepapers in the literature investigated the impact of cryptojackingmalware on IoT devices and compromised smart home networks.This  paper  first  proposes  an  accurate  and  efficient  IoT  crypto-jacking  detection  mechanism  based  on  network  traffic  features,which can detect both in-browser and host-based cryptojacking.Then, we focused on the cryptojacking implementation problemon  new  device  categories  (e.g.,  IoT)  and  designed  several  novelexperiment scenarios to assess our detection mechanism to coverthe current attack surface of the attackers. Particularly, we testedour  mechanism  in  various  attack  configurations  and  realisticnetwork  heterogeneous  smart  home  network  settings.  For  this,we  used  a  dataset  of  network  traces  consisting  of4Mnetworkpackets  and  showed  that  our  detection  algorithm  could  obtainaccuracy as high as99%with only one-hour of training data. Tothe best of our knowledge, this paper is the first study focusing onIoT cryptojacking and the first study analyzing various attackerbehaviors  and  network  settings  in  the  area  of  cryptojackingdetection.
+## Malicious Dataset: 
+
+Malicious dataset is collected from four devices:
+
+- Raspberry Pi,
+- LG Smart TV,
+- Laptop,
+- Tower Server.
+
+For the in-browser cryptojacking samples, we used a basic WordPress webpage containing a cryptomining script. For the host-based cryptojacking, we used the cryptocurrency mining binary MinerGate. In order to collect the network traffic from LG Smart TV, we used better to manipulate ARP protocl and forward the traffic to the data collection computer's IP address. 
+
+## Benign Dataset-1: 
+
+For our first set of experiments, we downloaded network traffic from a public repository: https://data.mendeley.com/datasets/5pmnkshffm/1
+In this dataset, the fields in the csv files are the following columns: Timestamp, protocol, payload size, IP address source and destination, UDP/TCP port source and destination. The dataset consists of several user activities: Interactive, Bulk Data Transfer, Web Browsing, Video Playback, Idle Behaviour.  We used each dataset accordingly to obtain a balanced dataset with our malicious dataset.  
+Note: If you use this dataset, please go to the original link and cite it properly. 
+
+
+## Benign Dataset-2: 
+
+For our second set of experiments, we also collected our own benign dataset from the same set of the devices that we collected malicious dataset.  We performed the following activities: 1) Idle, 2) Web Browsing, 3) Watching Video, 4) Large Download, and 5) Interactive. We performed each activity on each device and collected the network traffic. We only collected Video activity dataset from LG Smart TV. 
+
+
+
+
+
+
+
+
+
 
 
