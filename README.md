@@ -1,4 +1,4 @@
-# A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks
+# A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks
 This repository contains the code and dataset used on the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks".
 
 We collected the network ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following six columns: Timestamp, Source IP, Destination IP, Source MAC, Destination MAC, and Packet Lenght. 
