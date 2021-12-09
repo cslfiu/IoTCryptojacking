@@ -25,6 +25,42 @@ Note: If you use this dataset, please go to the original link and cite it proper
 
 For our second set of experiments, we also collected our own benign dataset from the same set of the devices that we collected malicious dataset.  We performed the following activities: 1) Idle, 2) Web Browsing, 3) Watching Video, 4) Large Download, and 5) Interactive. We performed each activity on each device and collected the network traffic. We only collected Video activity dataset from LG Smart TV. 
 
+## Experiments: 
+
+### Malicious vs. Benign-1: 
+In this set of experiments, we tested the following cases:
+
+- Designing an IoT Cryptojacking Detection Mechanism
+- Evaluation with Different Adversarial Behaviours: 
+    1. Server vs. Desktop vs. IoT
+    2. Aggressive vs. Robust vs. Stealthy
+    3. In-browser vs. Binary
+- Adversarial  Models  of  Compromised  Device  Numbers  in Smart Home Network
+    1. Fully comprimised (All)
+    2. Partially compromised (IoT + Laptop)
+    3. Single compromised (IoT)
+    4. IoT compromised (IoT + IoT)
+
+In these experiments, we used balanced datasets in terms the packet count. 
+
+### Malicious vs. Benign-2: 
+In this set of experiments, we tested the following cases:
+
+- We repeated the same set of experiments as the first dataset (Malicious vs. Benign-1)
+- We test the imbalanced dataset using the timely-balanced dataset sizes
+- We test the transferability
+
+## Code:
+
+The code for the first set of experiments are in [].
+
+The code for the second set of experiments are in [].
+
+
+
+
+
+
 
 
 
