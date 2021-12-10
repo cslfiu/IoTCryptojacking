@@ -31,11 +31,11 @@ For our second set of experiments, we also collected our own benign dataset from
 ### Malicious vs. Benign-1 
 In this set of experiments, we tested the following cases:
 
-- Designing an IoT Cryptojacking Detection Mechanism
+- S0: Designing an IoT Cryptojacking Detection Mechanism
 - Evaluation with Different Adversarial Behaviours: 
-    1. Server vs. Desktop vs. IoT
-    2. Aggressive vs. Robust vs. Stealthy
-    3. In-browser vs. Binary
+    1. S1: Server vs. Desktop vs. IoT
+    2. S2: Aggressive vs. Robust vs. Stealthy
+    3. S3: In-browser vs. Binary
 - Adversarial  Models  of  Compromised  Device  Numbers  in Smart Home Network
     1. Fully comprimised (All)
     2. Partially compromised (IoT + Laptop)
@@ -47,17 +47,17 @@ In these experiments, we used balanced datasets in terms the packet count.
 ### Malicious vs. Benign-2: 
 In this set of experiments, we tested the following cases:
 
-- We repeated the same set of experiments as the first dataset (Malicious vs. Benign-1)
-- We test the imbalanced dataset using the timely-balanced dataset sizes
-- We test the transferability
+- We repeated the same set of experiments as the first dataset (Malicious vs. Benign-1).
+- We tested the imbalanced dataset using the timely-balanced dataset sizes.
+- We tested the transferability.
 
 ## 3. Code
 
 The code and results for the first set of experiments (malicious vs. benign-1) are  [here](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb).
 
-The code for the second set of experiments are in [].
+The code for the second set of experiments are in [here](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Code/Malicious_vs_Benign_2_Scenarios).
 
-In order to reproduce the results, please download the code and dataset and then, set the your local path for each dataset accordingly. 
+In order to reproduce the results, please download the code and dataset; then, set the your local path in the code for each dataset accordingly. 
 
 
 
