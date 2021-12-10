@@ -28,7 +28,7 @@ For our second set of experiments, we also collected our own benign dataset from
 
 ## 2. Experiments 
 
-### Malicious vs. Benign-1 
+### [Malicious](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Malicious) vs. [Benign-1](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-1) 
 In this set of experiments, we tested the following cases:
 
 - S0: Designing an IoT Cryptojacking Detection Mechanism
@@ -42,9 +42,9 @@ In this set of experiments, we tested the following cases:
     3. Single compromised (IoT)
     4. IoT compromised (IoT + IoT)
 
-In these experiments, we used balanced datasets in terms the packet count. 
+In these experiments, we used balanced datasets in terms of the packet count. 
 
-### Malicious vs. Benign-2: 
+### [Malicious](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Malicious) vs. [Benign-2](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-2): 
 In this set of experiments, we tested the following cases:
 
 - We repeated the same set of experiments as the first dataset (Malicious vs. Benign-1).
