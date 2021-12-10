@@ -31,11 +31,11 @@ For our second set of experiments, we also collected our own benign dataset from
 ### [Malicious](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Malicious) vs. [Benign-1](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-1) 
 In this set of experiments, we tested the following cases:
 
-- S0: Designing an IoT Cryptojacking Detection Mechanism
+- S0: Designing an IoT Cryptojacking Detection Mechanism, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
 - Evaluation with Different Adversarial Behaviours: 
-    1. S1: Server vs. Desktop vs. IoT
-    2. S2: Aggressive vs. Robust vs. Stealthy
-    3. S3: In-browser vs. Binary
+    1. S1: Server vs. Desktop vs. IoT, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
+    2. S2: Aggressive vs. Robust vs. Stealthy, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
+    3. S3: In-browser vs. Binary, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
 - Adversarial  Models  of  Compromised  Device  Numbers  in Smart Home Network
     1. Fully comprimised (All)
     2. Partially compromised (IoT + Laptop)
