@@ -62,7 +62,7 @@ Steps for the reproducibility are as follows:
 3. Run all of the cells in jupyter notebook in order until the scenarios.
 4. Run the cell containing a scenario.
 
-Note: Jupyter Notebook and other python modules (e.g., tsfresh, pandas) needs to be installed.
+Note: Jupyter Notebook and other python modules (e.g., tsfresh, pandas) needs to be installed before these steps.
 
 
 
