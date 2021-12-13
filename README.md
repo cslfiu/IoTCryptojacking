@@ -26,7 +26,15 @@ Note: If you use this dataset in your project, please go to the [original link](
 
 ### Benign Dataset-2 
 
-For our second set of experiments, we collected our own benign dataset from the same set of the devices that we used for the malicious data collection.  We performed the following user activities: 1) Idle, 2) Web Browsing, 3) Watching Video, 4) Large Download, and 5) Interactive. We performed each activity on each device and collected the network traffic. We collected only Video activity dataset from LG Smart TV. Therefore, in total we collected 16 dataset (3 devices x 5 activities + LG Smart TV). 
+For our second set of experiments, we collected our own benign dataset from the same set of the devices that we used for the malicious data collection.  We performed the following user activities: 
+
+1) Idle Behavior, 
+2) Web Browsing, 
+3) Watching Video, 
+4) Large File Download,
+5) Interactive. 
+
+We performed each activity on each device and collected the network traffic. We collected only Video activity dataset fromG Smart TV. Therefore, in total we collected 16 dataset (3 devices x 5 activities + LG Smart TV). 
 
 ## 2. Experiments 
 
