@@ -54,12 +54,16 @@ In this set of experiments, we tested the following cases:
 - We also tested the transferability of the classifier.
 
 ## 3. Reproducibility
+
 Steps for the reproducibility are as follows:
 
 1. Download the data and code in the same directory. 
 2. Set the local path for each dataset accordingly. 
 3. Run all of the cells in jupyter notebook in order until the scenarios.
 4. Run the cell containing a scenario.
+
+Note: Jupyter Notebook and other python modules (e.g., tsfresh, pandas) needs to be installed.
+
 
 
 
