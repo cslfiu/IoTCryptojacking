@@ -1,50 +1,50 @@
 # A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks
-This repository contains the code and dataset used on the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks".
+This repository contains the code and dataset we used on the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks", which is currenly under review in NDSS.
 
 ## 1. Data
-We collected the network ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following six columns: Timestamp, Source IP, Destination IP, Source MAC, Destination MAC, and Packet Length. 
+We collected the ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following seven columns: 1) Timestamp, 2) Source IP, 3) Destination IP, 4) Source MAC, 5) Destination MAC, 6) Protocol, and 7) Packet Length. Even though we collected the IP address and protocol information, we did not use them in our experiments. We share them here so that it can be useful to other researchers. 
 
-### Malicious Dataset 
-
+### Malicious Dataset
 Malicious dataset is collected from four devices:
 
 - Raspberry Pi
-- LG Smart TV
-- Laptop
+- LG Smart TV (WebOS)
+- Laptop/Desktop
 - Tower Server
 
-For the in-browser cryptojacking samples, we used a basic WordPress webpage containing a cryptomining script. For the host-based cryptojacking, we used the cryptocurrency mining binary MinerGate. In order to collect the network traffic from LG Smart TV, we used better to manipulate ARP protocl and forward the traffic to the data collection computer's IP address. 
+For in-browser cryptojacking samples, we used a basic WordPress webpage containing a cryptomining script from the [webmine.io](http://webmine.cz/) and [WebminePool](https://www.webminepool.com). For the host-based cryptojacking, we used the cryptocurrency mining binary [MinerGate](https://www.minergate.com). In order to collect the network traffic from LG Smart TV, we used [Ettercap](https://www.ettercap-project.org/) to manipulate ARP protocol and forward the traffic to the data collection computer's IP address. 
 
-### Benign Dataset-1 
+### Benign Dataset-1
 
-For our first set of experiments, we downloaded network traffic from a public repository: https://data.mendeley.com/datasets/5pmnkshffm/1
+For our first set of experiments, we downloaded the network traffic data from a public repository: https://data.mendeley.com/datasets/5pmnkshffm/1
 In this dataset, the fields in the csv files are the following columns: Timestamp, protocol, payload size, IP address source and destination, UDP/TCP port source and destination. The dataset consists of several user activities: Interactive, Bulk Data Transfer, Web Browsing, Video Playback, Idle Behaviour.  We used each dataset accordingly to obtain a balanced dataset with our malicious dataset.  
-Note: If you use this dataset, please go to the original link and cite it properly. 
+
+Note: If you use this dataset in your project, please go to the [original link](https://data.mendeley.com/datasets/5pmnkshffm/1) and cite it properly. 
 
 
 ### Benign Dataset-2 
 
-For our second set of experiments, we also collected our own benign dataset from the same set of the devices that we collected malicious dataset.  We performed the following activities: 1) Idle, 2) Web Browsing, 3) Watching Video, 4) Large Download, and 5) Interactive. We performed each activity on each device and collected the network traffic. We only collected Video activity dataset from LG Smart TV. 
+For our second set of experiments, we collected our own benign dataset from the same set of the devices that we used for the malicious data collection.  We performed the following user activities: 1) Idle, 2) Web Browsing, 3) Watching Video, 4) Large Download, and 5) Interactive. We performed each activity on each device and collected the network traffic. We collected only Video activity dataset from LG Smart TV. Therefore, in total we collected 16 dataset (3 devices x 5 activities + LG Smart TV). 
 
 ## 2. Experiments 
 
-### [Malicious](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Malicious) vs. [Benign-1](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-1) 
+### [Malicious](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) vs. [Benign-1](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) 
 In this set of experiments, we tested the following cases:
 
-- S0: Designing an IoT Cryptojacking Detection Mechanism, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
-- Evaluation with Different Adversarial Behaviours: 
-    1. S1: Server vs. Desktop vs. IoT, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
-    2. S2: Aggressive vs. Robust vs. Stealthy, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
-    3. S3: In-browser vs. Binary, [Code](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb)
+- S0: Designing an IoT Cryptojacking Detection Mechanism
+- Evaluation with Different Adversarial Behaviours 
+    - S1: Server vs. Desktop vs. IoT
+    - S2: Aggressive vs. Robust vs. Stealthy
+    - S3: In-browser vs. Binary
 - Adversarial  Models  of  Compromised  Device  Numbers  in Smart Home Network
-    1. Fully comprimised (All)
-    2. Partially compromised (IoT + Laptop)
-    3. Single compromised (IoT)
-    4. IoT compromised (IoT + IoT)
+    - S4: Fully comprimised (All)
+    - S5: Partially compromised (Laptop + IoT)
+    - S6: Single compromised (IoT)
+    - S7: IoT compromised (IoT + IoT)
 
 In these experiments, we used balanced datasets in terms of the packet count. 
 
-### [Malicious](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Malicious) vs. [Benign-2](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-2): 
+### [Malicious](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) vs. [Benign-2](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing): 
 In this set of experiments, we tested the following cases:
 
 - We repeated the same scenarios as the first set of experiments with our own dataset (i.e., [Benign-2](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-2)). The code for each scenario are as follows: [S0](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s0.ipynb), [S1](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s1.ipynb), [S2](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s2_and_s3.ipynb), and [S3](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s2_and_s3.ipynb).
