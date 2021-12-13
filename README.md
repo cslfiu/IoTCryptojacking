@@ -4,7 +4,7 @@ This repository contains the code and dataset we used on the academic paper, "A 
 ## 1. Data
 We collected the ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following seven columns: 1) Timestamp, 2) Source IP, 3) Destination IP, 4) Source MAC, 5) Destination MAC, 6) Protocol, and 7) Packet Length. Even though we collected the IP address and protocol information, we did not use them in our experiments. We share them here so that it can be useful to other researchers. 
 
-We uploaded the dataset in a drive folder due to large file limitation of github. The dataset can found in the following link: https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing)
+We uploaded the dataset in a drive folder due to large file limitation of github. The dataset can found in the following link: https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing
 
 ### Malicious Dataset
 Malicious dataset is collected from four devices:
@@ -30,7 +30,7 @@ For our second set of experiments, we collected our own benign dataset from the 
 
 ## 2. Experiments 
 
-### [Malicious](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) vs. [Benign-1](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) 
+### Malicious vs. Benign-1 
 In this set of experiments, we tested the following cases:
 
 - S0: Designing an IoT Cryptojacking Detection Mechanism
@@ -46,7 +46,7 @@ In this set of experiments, we tested the following cases:
 
 In these experiments, we used balanced datasets in terms of the packet count. 
 
-### [Malicious](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) vs. [Benign-2](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing): 
+### Malicious vs. Benign-2 
 In this set of experiments, we tested the following cases:
 
 - We repeated the same scenarios (S0-S7) as the first set of experiments with our own dataset (i.e., Benign-2). The code for all scenarios is as follows: [S0-S7](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2%20(All%20Scenarios).ipynb)
