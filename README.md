@@ -34,7 +34,7 @@ For our second set of experiments, we collected our own benign dataset from the 
 4) Large File Download,
 5) Interactive. 
 
-We performed each activity on each device and collected the network traffic. We collected only Video activity dataset fromG Smart TV. Therefore, in total we collected 16 dataset (3 devices x 5 activities + LG Smart TV). 
+We performed each activity on each device and collected the network traffic. We collected only watching video activity from LG Smart TV. Therefore, in total we collected 16 dataset (3 devices x 5 activities + LG Smart TV). 
 
 ## 2. Experiments 
 
