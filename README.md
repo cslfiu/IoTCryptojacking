@@ -4,6 +4,8 @@ This repository contains the code and dataset we used on the academic paper, "A 
 ## 1. Data
 We collected the ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following seven columns: 1) Timestamp, 2) Source IP, 3) Destination IP, 4) Source MAC, 5) Destination MAC, 6) Protocol, and 7) Packet Length. Even though we collected the IP address and protocol information, we did not use them in our experiments. We share them here so that it can be useful to other researchers. 
 
+We uploaded the dataset in a drive folder due to large file limitation of github. The dataset can found in the following link: https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing)
+
 ### Malicious Dataset
 Malicious dataset is collected from four devices:
 
@@ -47,17 +49,17 @@ In these experiments, we used balanced datasets in terms of the packet count.
 ### [Malicious](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing) vs. [Benign-2](https://drive.google.com/drive/folders/13kNRyCuGOoRZ2BrBXoNvRnSnivq6_y4h?usp=sharing): 
 In this set of experiments, we tested the following cases:
 
-- We repeated the same scenarios as the first set of experiments with our own dataset (i.e., [Benign-2](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Data/Benign-2)). The code for each scenario are as follows: [S0](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s0.ipynb), [S1](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s1.ipynb), [S2](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s2_and_s3.ipynb), and [S3](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2_Scenarios/Malicious_vs_Benign_2_s2_and_s3.ipynb).
-- We tested the imbalanced dataset using the timely-balanced dataset sizes.
-- We tested the transferability.
+- We repeated the same scenarios (S0-S7) as the first set of experiments with our own dataset (i.e., Benign-2). The code for all scenarios is as follows: [S0-S7](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2%20(All%20Scenarios).ipynb)
+- We tested the performance of our classifier with imbalanced dataset. Particularly, we tested each device`s malicious data with its own benign data (raspberry vs. raspberry or server vs. server). The code and results are placed [here](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Imbalanced%20dataset%20experiments.ipynb).
+- We also tested the transferability of the classifier.
 
-## 3. Code
+## 3. Reproducibility
+Steps for the reproducibility are as follows:
 
-The code and results for the first set of experiments (malicious vs. benign-1) are  [here](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_1_Scenarios.ipynb).
-
-The code for the second set of experiments are in [here](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/tree/main/Code/Malicious_vs_Benign_2_Scenarios).
-
-In order to reproduce the results, please download the code and dataset; then, set the your local path in the code for each dataset accordingly. 
+1. Download the data and code in the same directory. 
+2. Set the local path for each dataset accordingly. 
+3. Run all of the cells in jupyter notebook in order until the scenarios.
+4. Run the cell containing a scenario.
 
 
 
