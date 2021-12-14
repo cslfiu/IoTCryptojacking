@@ -60,7 +60,7 @@ In this set of experiments, we tested the following cases:
 - We repeated the same scenarios (S0-S7) as the first set of experiments with our own dataset (i.e., Benign-2). The code and results for all scenarios are as follows: [S0-S7](https://github.com/IoTcryptojacking/A_Lightweight_IoT_Cryptojacking_Detection_Mechanism_in_Heterogeneous_Smart_Home_Networks/blob/main/Code/Malicious_vs_Benign_2%20(All%20Scenarios).ipynb).
 - S8: Imbalanced dataset: We tested the performance of our classifier with imbalanced dataset. Particularly, we tested each device`s malicious data with its own benign data (raspberry vs. raspberry or server vs. server). The code and results are placed [here](https://github.com/IoTcryptojacking/IoTCryptojacking/blob/main/Code/Imbalanced%20dataset%20experiments.ipynb).
 - S9: Classifier Transferability: We tested the transferability of the classifier.  The code and results are placed [here](https://github.com/IoTcryptojacking/IoTCryptojacking/blob/main/Code/Transferability%20experiments.ipynb).
-- S10: Non-default Parameters: We tested the non-default parameters of SVM classifier.  The code and results are placed [here](https://github.com/IoTcryptojacking/IoTCryptojacking/blob/main/Code/Non-default%20parameters.ipynb).
+- S10: Non-default Parameters: We tested the non-default parameters of the SVM classifier.  The code and results are placed [here](https://github.com/IoTcryptojacking/IoTCryptojacking/blob/main/Code/Non-default%20parameters.ipynb).
 
 ## 3. Reproducibility
 
@@ -71,6 +71,6 @@ Steps for the reproducibility are as follows:
 3. Run all of the cells in jupyter notebook in order until the scenarios.
 4. Run the cell containing a scenario.
 
-Note: Jupyter Notebook and other python modules (e.g., tsfresh, pandas) needs to be installed before these steps.
+Note: Jupyter Notebook and other python modules (e.g., tsfresh, pandas) need to be installed before these steps.
 
 
