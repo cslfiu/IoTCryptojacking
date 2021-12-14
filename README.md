@@ -51,9 +51,8 @@ In this set of experiments, we tested the following cases:
     - S5: Partially compromised (Laptop + IoT)
     - S6: Single compromised (IoT)
     - S7: IoT compromised (IoT + IoT)
-The code for these experiments can be found [here](https://github.com/IoTcryptojacking/IoTCryptojacking/blob/main/Code/Malicious_vs_Benign_1%20(All%20Scenarios).ipynb).
 
-In these experiments, we used balanced datasets in terms of the packet count. 
+The code for these experiments can be found [here](https://github.com/IoTcryptojacking/IoTCryptojacking/blob/main/Code/Malicious_vs_Benign_1%20(All%20Scenarios).ipynb). In these experiments, we used balanced datasets in terms of the packet count. 
 
 ### Malicious vs. Benign-2 
 In this set of experiments, we tested the following cases:
