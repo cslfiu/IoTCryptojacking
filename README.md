@@ -1,5 +1,17 @@
 # A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks
-This repository contains the code and dataset we used on the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks", which is currenly under review in NDSS.
+This repository contains the code and dataset used in the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks", which is accepted for publication at [NDSS 2022](https://www.ndss-symposium.org/ndss2022/accepted-papers/).
+
+------------------------------
+If you use any material from this repository, please cite the following work:
+
+```
+@INPROCEEDINGS{tekiner2022cryptojacking,  
+author={Tekiner, Ege and Acar, Abbas and Uluagac, A. Selcuk},  
+booktitle={29th Annual Network and Distributed System Security Symposium, NDSS},   
+title={A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks},   
+year={2022}}
+```
+
 
 ## 1. Data
 We collected the ingoing and outgong network traffic from each device. Particularly, each dataset consists of the following seven columns: 1) Timestamp, 2) Source IP, 3) Destination IP, 4) Source MAC, 5) Destination MAC, 6) Protocol, and 7) Packet Length. Even though we collected the IP address and protocol information, we did not use them in our experiments. We share them here so that it can be useful to other researchers. 
