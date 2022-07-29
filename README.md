@@ -1,5 +1,5 @@
 # A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks
-This repository contains the code and dataset used in the academic paper, "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks", which is accepted for publication at [NDSS 2022](https://www.ndss-symposium.org/ndss2022/accepted-papers/).
+This repository contains the code and dataset used in the academic paper, "[A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks](https://www.ndss-symposium.org/wp-content/uploads/2022-208-paper.pdf)", which is accepted for publication at [NDSS 2022](https://www.ndss-symposium.org/ndss2022/accepted-papers/).
 
 ------------------------------
 If you use any material from this repository, please cite the following work:
